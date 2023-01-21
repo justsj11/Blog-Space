@@ -65,42 +65,4 @@ GET!
     1. Extra/meta information about the outgoing request.
     2. Auth, body info, client info etc
 
-
-## What is REST? => Representational State Transfer
- REST is a design pattern to provide a standard way for clients and servers to communicate
-
-## PRINCIPLES OF REST
-    1. Client and Server Seperation
-    In a RESTful API, client requests for data in JSON form, and thus, the server's response will be the data in JSON.
-
-    2. Statelessness
-    3.Accessing "Resources"
-
-1. What does it mean for the server to be "Stateless"?
-It forgets the interaction after the response is sent.
-
-* In the Mike's Bikes example, what URL endpoint (and request method)
-  would you expect to use in order to accomplish the following:
-  
-    2. Retrieve a list of all the bikes that are sold?
-       GET /bikes
-
-    3. Retrieve detailed information about the bike with an ID of 42?
-       GET /bikes/42
-    
-    4. Update the price of the bike with an ID of 21?
-       PUT /bikes/21
-    
-    5. Add a new bike to the list of bikes being sold?
-       POST /bikes
-    
-    6. Remove the bike with an ID of 56 from the list of bikes?
-       DELETE /bikes/56
-    7. How is a nested resource URL like /bikes/123/reviews
-       different from an endpoint like /reviews?
-       /bikes/123/reviews - return an array of reviews about that specific bike
-       /reviews - return an array of all reviews on the site
-
-## Query Strings: A way to filter results. (?type="mountain")
-
 ## LIVE URL: https://www.blogspacebyjustsj11.netlify.app
